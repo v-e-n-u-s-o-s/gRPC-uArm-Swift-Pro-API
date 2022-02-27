@@ -1,0 +1,637 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC_uArm_API.Protos";
+
+//----------------------[ Moving ]----------------------
+
+service Moving {
+	rpc G0 (stream G0Request) returns (stream G0Response);
+	rpc G1 (stream G1Request) returns (stream G1Response);
+	rpc G2004 (stream G2004Request) returns (stream G2004Response);
+	rpc G2201 (stream G2201Request) returns (stream G2201Response);
+	rpc G2202 (stream G2202Request) returns (stream G2202Response);
+	rpc G2204 (stream G2204Request) returns (stream G2204Response);
+	rpc G2205 (stream G2205Request) returns (stream G2205Response);
+}
+
+// ----[ G0 ]----
+
+message G0Request {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+	string f = 4;
+}
+
+message G0Response {
+	string status = 1;
+}
+
+// ----[ G1 ]----
+
+message G1Request {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+	string f = 4;
+}
+
+message G1Response {
+	string status = 1;
+}
+
+// ----[ G2004 ]----
+
+message G2004Request {
+	string p = 1;
+}
+
+message G2004Response {
+	string status = 1;
+}
+
+// ----[ G2201 ]----
+
+message G2201Request {
+	string s = 1;
+	string r = 2;
+	string h = 3;
+	string f = 4;
+}
+
+message G2201Response {
+	string status = 1;
+}
+
+// ----[ G2202 ]----
+
+message G2202Request {
+	string n = 1;
+	string v = 2;
+}
+
+message G2202Response {
+	string status = 1;
+}
+
+// ----[ G2204 ]----
+
+message G2204Request {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+	string f = 4;
+}
+
+message G2204Response {
+	string status = 1;
+}
+
+// ----[ G2205 ]----
+
+message G2205Request {
+	string s = 1;
+	string r = 2;
+	string h = 3;
+	string f = 4;
+}
+
+message G2205Response {
+	string status = 1;
+}
+
+//----------------------[ Setting ]----------------------
+
+service Setting {
+	rpc M17 (stream M17Request) returns (stream M17Response);
+	rpc M204 (stream M204Request) returns (stream M204Response);
+	rpc M2019 (stream M2019Request) returns (stream M2019Response);
+	rpc M2120 (stream M2120Request) returns (stream M2120Response);
+	rpc M2122 (stream M2122Request) returns (stream M2122Response);
+	rpc M2201 (stream M2201Request) returns (stream M2201Response);
+	rpc M2202 (stream M2202Request) returns (stream M2202Response);
+	rpc M2203 (stream M2203Request) returns (stream M2203Response);
+	rpc M2210 (stream M2210Request) returns (stream M2210Response);
+	rpc M2211 (stream M2211Request) returns (stream M2211Response);
+	rpc M2212 (stream M2212Request) returns (stream M2212Response);
+	rpc M2213 (stream M2213Request) returns (stream M2213Response);
+	rpc M2220 (stream M2220Request) returns (stream M2220Response);
+	rpc M2221 (stream M2221Request) returns (stream M2221Response);
+	rpc M2222 (stream M2222Request) returns (stream M2222Response);
+	rpc M2231 (stream M2231Request) returns (stream M2231Response);
+	rpc M2232 (stream M2232Request) returns (stream M2232Response);
+	rpc M2234 (stream M2234Request) returns (stream M2234Response);
+	rpc M2240 (stream M2240Request) returns (stream M2240Response);
+	rpc M2241 (stream M2241Request) returns (stream M2241Response);
+	rpc M2245 (stream M2245Request) returns (stream M2245Response);
+	rpc M2400 (stream M2400Request) returns (stream M2400Response);
+	rpc M2401 (stream M2401Request) returns (stream M2401Response);
+	rpc M2410 (stream M2410Request) returns (stream M2410Response);
+	rpc M2411 (stream M2411Request) returns (stream M2411Response);
+	rpc M2500 (stream M2500Request) returns (stream M2500Response);
+}
+
+// ----[ M17 ]----
+
+message M17Request {
+
+}
+
+message M17Response {
+	string status = 1;
+}
+
+// ----[ M204 ]----
+
+message M204Request {
+	string p = 1;
+	string t = 2;
+	string r = 3;
+}
+
+message M204Response {
+	string status = 1;
+}
+
+// ----[ M2019 ]----
+
+message M2019Request {
+
+}
+
+message M2019Response {
+	string status = 1;
+}
+
+// ----[ M2120 ]----
+
+message M2120Request {
+	string v = 1;
+}
+
+message M2120Response {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+}
+
+// ----[ M2122 ]----
+
+message M2122Request {
+	string v = 1;
+}
+
+message M2122Response {
+	string status = 1;
+}
+
+// ----[ M2201 ]----
+
+message M2201Request {
+	string n = 1;
+}
+
+message M2201Response {
+	string status = 1;
+}
+
+// ----[ M2202 ]----
+
+message M2202Request {
+	string n = 1;
+}
+
+message M2202Response {
+	string status = 1;
+}
+
+// ----[ M2203 ]----
+
+message M2203Request {
+	string n = 1;
+}
+
+message M2203Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ M2210 ]----
+
+message M2210Request {
+	string f = 1;
+	string t = 2;
+}
+
+message M2210Response {
+	string status = 1;
+}
+
+// ----[ M2211 ]----
+
+message M2211Request {
+	string n = 1;
+	string a = 2;
+	string t = 3;
+}
+
+message M2211Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ M2212 ]----
+
+message M2212Request {
+	string n = 1;
+	string a = 2;
+	string t = 3;
+	string v = 4;
+}
+
+message M2212Response {
+	string status = 1;
+}
+
+// ----[ M2213 ]----
+
+message M2213Request {
+	string v = 1;
+}
+
+message M2213Response {
+	string status = 1;
+}
+
+// ----[ M2220 ]----
+
+message M2220Request {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+}
+
+message M2220Response {
+	string status = 1;
+	string b = 2;
+	string l = 3;
+	string r = 4;
+}
+
+// ----[ M2221 ]----
+
+message M2221Request {
+	string b = 1;
+	string l = 2;
+	string r = 3;
+}
+
+message M2221Response {
+	string status = 1;
+	string x = 2;
+	string y = 3;
+	string z = 4;
+}
+
+// ----[ M2222 ]----
+
+message M2222Request {
+	string x = 1;
+	string y = 2;
+	string z = 3;
+	string p = 4;
+}
+
+message M2222Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ M2231 ]----
+
+message M2231Request {
+	string v = 1;
+}
+
+message M2231Response {
+	string status = 1;
+}
+
+// ----[ M2232 ]----
+
+message M2232Request {
+	string v = 1;
+}
+
+message M2232Response {
+	string status = 1;
+}
+
+// ----[ M2234 ]----
+
+message M2234Request {
+	string v = 1;
+}
+
+message M2234Response {
+	string status = 1;
+}
+
+// ----[ M2240 ]----
+
+message M2240Request {
+	string n = 1;
+	string v = 2;
+}
+
+message M2240Response {
+	string status = 1;
+}
+
+// ----[ M2241 ]----
+
+message M2241Request {
+	string n = 1;
+	string v = 2;
+}
+
+message M2241Response {
+	string status = 1;
+}
+
+// ----[ M2245 ]----
+
+message M2245Request {
+	string v = 1;
+}
+
+message M2245Response {
+	string status = 1;
+}
+
+// ----[ M2400 ]----
+
+message M2400Request {
+	string s = 1;
+}
+
+message M2400Response {
+	string status = 1;
+}
+
+// ----[ M2401 ]----
+
+message M2401Request {
+
+}
+
+message M2401Response {
+	string status = 1;
+}
+
+// ----[ M2410 ]----
+
+message M2410Request {
+	
+}
+
+message M2410Response {
+	string status = 1;
+}
+
+// ----[ M2411 ]----
+
+message M2411Request {
+	string s = 1;
+}
+
+message M2411Response {
+	string status = 1;
+}
+
+// ----[ M2500 ]----
+
+message M2500Request {
+
+}
+
+message M2500Response {
+	string status = 1;
+}
+
+//----------------------[ Querying ]----------------------
+
+service Querying {
+	rpc P2200 (stream P2200Request) returns (stream P2200Response);
+	rpc P2201 (stream P2201Request) returns (stream P2201Response);
+	rpc P2202 (stream P2202Request) returns (stream P2202Response);
+	rpc P2203 (stream P2203Request) returns (stream P2203Response);
+	rpc P2204 (stream P2204Request) returns (stream P2204Response);
+	rpc P2205 (stream P2205Request) returns (stream P2205Response);
+	rpc P2206 (stream P2206Request) returns (stream P2206Response);
+	rpc P2220 (stream P2220Request) returns (stream P2220Response);
+	rpc P2221 (stream P2221Request) returns (stream P2221Response);
+	rpc P2231 (stream P2231Request) returns (stream P2231Response);
+	rpc P2232 (stream P2232Request) returns (stream P2232Response);
+	rpc P2233 (stream P2233Request) returns (stream P2233Response);
+	rpc P2234 (stream P2234Request) returns (stream P2234Response);
+	rpc P2240 (stream P2240Request) returns (stream P2240Response);
+	rpc P2241 (stream P2241Request) returns (stream P2241Response);
+	rpc P2242 (stream P2242Request) returns (stream P2242Response);
+	rpc P2400 (stream P2400Request) returns (stream P2400Response);
+}
+
+// ----[ P2200 ]----
+
+message P2200Request {
+
+}
+
+message P2200Response {
+	string status = 1;
+	string b = 2;
+	string l = 3;
+	string r = 4;
+}
+
+// ----[ P2201 ]----
+
+message P2201Request {
+
+}
+
+message P2201Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2202 ]----
+
+message P2202Request {
+
+}
+
+message P2202Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2203 ]----
+
+message P2203Request {
+
+}
+
+message P2203Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2204 ]----
+
+message P2204Request {
+
+}
+
+message P2204Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2205 ]----
+
+message P2205Request {
+
+}
+
+message P2205Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2206 ]----
+
+message P2206Request {
+	string n = 1;
+}
+
+message P2206Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2220 ]----
+
+message P2220Request {
+
+}
+
+message P2220Response {
+	string status = 1;
+	string x = 2;
+	string y = 3;
+	string z = 4;
+}
+
+// ----[ P2221 ]----
+
+message P2221Request {
+
+}
+
+message P2221Response {
+	string status = 1;
+	string s = 2;
+	string r = 3;
+	string h = 4;
+}
+
+// ----[ P2231 ]----
+
+message P2231Request {
+
+}
+
+message P2231Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2232 ]----
+
+message P2232Request {
+
+}
+
+message P2232Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2233 ]----
+
+message P2233Request {
+
+}
+
+message P2233Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2234 ]----
+
+message P2234Request {
+
+}
+
+message P2234Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2240 ]----
+
+message P2240Request {
+	string n = 1;
+}
+
+message P2240Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2241 ]----
+
+message P2241Request {
+	string n = 1;
+}
+
+message P2241Response {
+	string status = 1;
+	string v = 2;
+}
+
+// ----[ P2242 ]----
+
+message P2242Request {
+
+}
+
+message P2242Response {
+	string status = 1;
+	string b = 2;
+	string l = 3;
+	string r = 4;
+}
+
+// ----[ P2400 ]----
+
+message P2400Request {
+
+}
+
+message P2400Response {
+	string status = 1;
+	string v = 2;
+}

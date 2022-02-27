@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Commands.cs \
+obj\Debug\net6.0\Protos/CommandsGrpc.cs: Protos/commands.proto
