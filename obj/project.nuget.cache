@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xn36CrOClNiNBxvCUkz8g903YMDpw2XB/03iJWpjwUj4vtSA7B4XrZxTBIOELVQ225YicFjyW2FsnmVLuREVBw==",
+  "dgSpecHash": "tKTKEbAPe8sVAHikEZNFVYJpI8lRU3Vp9FdSRJI1KeeOAdBKIJdH+wLedWbT0aFtzx8T+h/hZeKswKawog2BAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\janek\\OneDrive\\Pulpit\\gRPC uArm API\\gRPC uArm API.csproj",
+  "projectFilePath": "C:\\Users\\janek\\OneDrive\\Dokumenty\\gRPC-uArm-Swift-Pro-API\\gRPC uArm API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\janek\\.nuget\\packages\\google.protobuf\\3.18.1\\google.protobuf.3.18.1.nupkg.sha512",
     "C:\\Users\\janek\\.nuget\\packages\\grpc.aspnetcore\\2.43.0\\grpc.aspnetcore.2.43.0.nupkg.sha512",
