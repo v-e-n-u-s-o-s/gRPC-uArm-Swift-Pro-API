@@ -22,6 +22,7 @@ namespace gRPC_uArm_API.Services
             while (!context.CancellationToken.IsCancellationRequested && await requestStream.MoveNext())
             {
                 var request = requestStream.Current;
+                logger.LogInformation(request.ToString());
                 Commands.Send($"G0 X{request.X} Y{request.Y} Z{request.Z} F{request.F}\n");
             }
         }
